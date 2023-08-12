@@ -35,7 +35,7 @@ usernames = df['Login'].tolist()
 
 with webdriver as driver:
     wait = WebDriverWait(driver,30)
-    driver.get('https://report.allstatess.com')
+    driver.get('https://report.address.com')
     # wait.until(presence_of_element_located((By.CLASS_NAME, "form-control")))
     username = driver.find_element(By.CSS_SELECTOR, 'input[placeholder="User Name"]')
     password = driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Password"]')
